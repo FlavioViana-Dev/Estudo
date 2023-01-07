@@ -1,62 +1,56 @@
-# Construindo uma API Restful de Vendas Javascript com Node.js, ExpressJS, Typescript, TypeORM, Postgres, Redis, etc.
+<p align="center">
+  <a href="https://aluiziodeveloper.com.br/">
+    <img alt="Aluizio Developer" src="https://aluiziodeveloper.com.br/assets/img/icon.png" width="200" />
+  </a>
+</p>
+<h2 align="center">
+Informação sobre tecnologia, dicas, tutoriais, mini-cursos e muito mais.
+</h2>
 
-Olá Dev, meu nome é Jorge Aluizio!
+## API Restful com Node.js, Express, Typescript, etc
 
-Ao longo dessa jornada construiremos uma aplicação backend para gestão de vendas com funcionalidades para criação de cadastro de produtos, cadastro de clientes, pedidos de compras e uma completa gestão de usuários da aplicação, com autenticação via Token JWT, recuperação de senha por email, atualização de perfil, atualização de avatar, e muito mais. Através do TypeORM implementaremos Entidades e Repositórios para cada recurso a ser consumido na API.
+Seja muito bem-vindo e bem-vinda ao curso projeto prático de desenvolvimento de API Restful com Node.js, Express, Typescript, TypeORM, Postgres, Redis, Docker, ...
 
-Aplicaremos conceitos de boas práticas e qualidade no código, introduzindo recursos como Design Patterns, Domain Driven Design (DDD) e Princípios SOLID, além de introduzir Testes Automatizados com o framework Jest.
+Ao longo dessa jornada construiremos uma aplicação backend para gestão de vendas com funcionalidades para criação de cadastro de produtos, cadastro de clientes, pedidos de compras e uma completa gestão de usuários da aplicação, com autenticação via Token JWT, recuperação de senha por email, atualização de perfil, atualização de avatar, e muito mais.
 
-Principais recursos que implementaremos no projeto:
+Através do TypeORM implementaremos Entidades e Repositórios para cada recurso a ser consumido na API.
 
-API Restful
+Acesse a [página do curso na Udemy](https://www.udemy.com/course/api-restful-de-vendas/?referralCode=6DDEF85A747CA5CC4135) para conferir o conteúdo.
 
-CORS
+## Objetivo
 
-Tratamento de erros
+Esse curso foi planejado de forma a escalar e evoluir de acordo com as novas versões das ferramentas aqui utilizadas, o que garante a você que contratou esse treinamento, acesso vitalício ao conteúdo sempre atualizado.
 
-Sistema de roteamento
+A ideia é que possamos ao longo do tempo incluir novas funcionalidades, simular alterações de ferramentas em uso, como por exemplo alterar o SGDB de Postgres para MySql, enfim, manter uma dinâmica de evolução constante do projeto.
 
-Middlewares
+## Rodando a aplicação no seu PC
 
-CRUD
+Faça um clone deste repositório e instale no seu ambiente de desenvolvimento usando o seguinte comando no seu terminal (escolha um diretório apropriado):
 
-TypeORM com o padrão Repository
+```
+git clone https://github.com/aluiziodeveloper/api-vendas.git
+```
 
-Migrations
+Após clonar o conteúdo do repositório, acesse o diretório criado e efetue a instalação das dependências:
 
-Relacionamento Many-to-Many
+```
+cd api-vendas
 
-Filesystem/upload de arquivos
+yarn
 
-Armazenamento de arquivos em Bucket Amazon S3
+# ou
 
-Envio de email fake (dev env) e email profissional com o Zoho Mail e Amazon SES
+npm install
+```
 
-Autenticação com token de acesso (JWT)
+Após essa instalação execute a aplicação com o comando `yarn dev` ou `npm run dev`. O servidor estará em execução no endereço `http://localhost:3333`.
 
-Cache com Redis
+## Redes Sociais
 
-Proteção contra ataque DDoS
+[Site Aluizio Developer](https://aluiziodeveloper.com.br)
 
-Design Patterns com Domain Driven Design (DDD) e Princípios SOLID
+[YouTube](https://www.youtube.com/jorgealuizio)
 
-Iniciando em Testes Automatizados com Jest
+[Servidor no Discord](https://discord.gg/3J87BMz5fD)
 
-Deploy em Produção na Digital Ocean
-
-Principais tecnologias que utilizaremos para desenvolvimento da API: Node.js, Express, Typescript, TypeORM, Postgres através de container Docker, Redis através de container Docker, Amazon S3, Amazon SES, etc.
-
-O que você aprenderá
-Construir API Restful Javascript Node com Express e Typescript
-Implementar o TypeORM em projetos Node com Postgres
-Configurar cache na API com o Redis
-Usar o Docker em ambiente de desenvolvimento
-Realizar o deploy em produção com servidor na Digital Ocean
-Qualidade em código com Design Patterns, Domain Driven Design (DDD) e Princípios SOLID
-Testes Automatizados com o framework Jest
-Há algum requisito ou pré-requisito para o curso?
-Conhecimento básico de desenvolvimento de aplicações web.
-Comandos básicos de shell.
-Para quem é este curso:
-Desenvolvedores com pouca experiência no processo de construção de aplicações para web.
-Profissionais em início de carreira na construção de softwares.
+[LinkedIn](https://www.linkedin.com/in/jorgealuizio/)

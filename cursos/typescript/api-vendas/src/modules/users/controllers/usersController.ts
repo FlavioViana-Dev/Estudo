@@ -1,23 +1,28 @@
 import { Request, Response } from 'express';
-import CreateService from '../services/CreateUserService';
-// import DeleteProductService from '../services/DeleteProductService';
-import ListService from '../services/ListUserService';
-// import ShowProductService from '../services/ShowProductService';
-// import UpdateProductService from '../services/UpdateProductService';
+import CreateUserService from '../services/CreateUserService';
+import ListUserService from '../services/ListUserService';
+import { instanceToInstance } from 'class-transformer';
 
 export default class UsersController {
   public async index(request: Request, response: Response): Promise<Response> {
-    const service = new ListService();
-    const list = await service.execute();
-    return response.json(list);
+    const listUser = new ListUserService();
+
+    const users = await listUser.execute();
+
+    return response.json(instanceToInstance(users));
   }
 
   public async create(request: Request, response: Response): Promise<Response> {
     const { name, email, password } = request.body;
 
-    const service = new CreateService();
-    const entity = await service.execute({ name, email, password });
+    const createUser = new CreateUserService();
 
-    return response.json(entity);
+    const user = await createUser.execute({
+      name,
+      email,
+      password,
+    });
+
+    return response.json(instanceToInstance(user));
   }
 }
