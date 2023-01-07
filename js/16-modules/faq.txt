@@ -1,0 +1,45 @@
+//Programador a Bordo - youtube
+//https://www.youtube.com/watch?v=vcjEgRNHHQA
+/*
+Intro: 00:00
+NPM: 02:07
+Estrutura de pastas: 02:45
+npm start: 06:12
+Início código (exemplo simples): 07:09
+Componente Hello World: 09:37
+Mais sobre import: 11:29
+Function agrupador: 13:43
+Export sem default: 15:14
+Mais export sem default: 17:07
+Import com apelido usando as: 17:43
+Mock pessoas: 18:27
+Componente List: 20:41
+Importando componente List: 22:21
+Arquivo único de export: 24:02
+Explicando mais sobre export: 26:40
+Import all: 27:47
+Encerramento: 28:55
+*/
+
+/*
+Webpack:
+https://webpack.js.org/
+
+npm install --save-dev webpack
+npm install --save-dev webpack-cli
+
+se já estiver definido no package.json basta npm install
+
+npm start 
+ele cria a pasta public e criar javascript 
+*/
+
+export exporta uma Function para ser usada em qualquer lugar 
+que eu import a mesma
+
+quando uso export default eu posso colocar qualquer nome
+no import  
+
+se eu nao usar o default eu tenho que dizer exatamente o nome 
+da funcao ou constante
+import {group} from './modules/useful' 

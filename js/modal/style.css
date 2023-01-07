@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.btn {
+    background-color: rgb(33, 156, 70);
+    padding: 5px 10px 5px 10px;
+    border: 2px solid rgb(4, 92, 30);
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.btn:hover {
+    background-color: rgb(4, 92, 30);
+}
+
+.btn:active {
+    background-color: rgb(129, 255, 166);
+    color: rgb(4, 92, 30);
+}
+
+.modal {
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+   
+  
+}
+
+.modal-back {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: go-back 1s;
+  
+}
+
+
+@keyframes go-screen {
+    0% {
+        transform: translatey(1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes go-back {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes go-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes go-screen-out {
+    0% {
+        transform: translatey(0);
+    }
+    100% {
+        transform: translateX(1000px);
+    }
+}
+ 
+.modal-back2 {   
+    animation:  go-screen-out 1s;
+  
+}
+
+
+.modal-content {
+    margin: 0 auto;
+    margin-top: 3%;
+    max-width: 600px;
+    background-color: #eee;
+    padding: 0;
+    box-shadow: 0 0 2px #fff;
+    position: relative;
+    animation: go-screen 0.4s;
+}
+
+.modal-header h1{
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    padding: 10px;
+}
+
+.modal-header{
+    background-color: #ccc;
+}
+
+.modal-footer{
+    background-color: #ccc;
+}
