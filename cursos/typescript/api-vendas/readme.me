@@ -1,0 +1,44 @@
+yarn add express cors express-async-errors
+
+yarn -D @types/express @types/cors
+npm install --save-dev @types/express @types/cors
+
+consulta a politica de execucao
+Get-ExecutionPolicy
+Altera a plitica de execucao
+Set-ExecutionPolicy RemoteSigned
+
+
+para usa TYPEORM https://typeorm.io
+yarn add typeorm reflect-metadata pg
+
+Criando o banco postgres no docker
+docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+
+A configuração de campo para receber data com o tipo timestamp que será exibida ao longo do curso, deve ser substituída para que não tenhamos problemas com fuso horário.
+
+Em todas as aulas em que houver criação de migration, considerar colocar os campos com o tipo timestamp com o valor timestamp with time zone.
+
+{
+  name: 'created_at',
+  type: 'timestamp with time zone',
+  default: 'now()',
+},
+{
+  name: 'updated_at',
+  type: 'timestamp with time zone',
+  default: 'now()',
+},
+
+//criar arquivo de migrations
+yarn typeorm migration:create -n CreateProducts
+
+//rodar migration
+yarn typeorm migration:run
+
+//adicionar a extenssão no postgres uuid-ossp
+
+//gerar model automatica https://www.youtube.com/watch?v=JAB9k_wFnUc
+typeorm-model-generator
+
